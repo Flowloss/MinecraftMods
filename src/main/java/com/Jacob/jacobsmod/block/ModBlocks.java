@@ -2,6 +2,7 @@ package com.Jacob.jacobsmod.block;
 
 import com.Jacob.jacobsmod.JacobsMod;
 import com.Jacob.jacobsmod.block.custom.SoundBlock;
+import com.Jacob.jacobsmod.block.custom.TomatoCropBlock;
 import com.Jacob.jacobsmod.item.ModItems;
 import com.Jacob.jacobsmod.util.ModTags;
 import net.minecraft.sounds.SoundEvent;
@@ -92,6 +93,9 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties
                     .copy(Blocks.STONE).noOcclusion()
                     .sound(SoundType.STONE), BlockSetType.STONE));
+
+    public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
+            () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
 
 

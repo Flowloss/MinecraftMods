@@ -4,8 +4,7 @@ import com.Jacob.jacobsmod.JacobsMod;
 import com.Jacob.jacobsmod.block.ModBlocks;
 import com.Jacob.jacobsmod.item.custom.FuelItem;
 import com.Jacob.jacobsmod.item.custom.MetalDetectorItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -27,6 +26,20 @@ public class ModItems {
             ()-> new FuelItem(new Item.Properties(), 400));
     public static final RegistryObject<Item> OMNIUM_STAFF = ITEMS.register("omnium_staff",
             ()-> new Item(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> OMNIUM_SWORD = ITEMS.register("omnium_sword",
+            ()-> new SwordItem(ModToolTiers.OMNIUM, 6, 2, new Item.Properties()));
+    public static final RegistryObject<Item> OMNIUM_PICKAXE = ITEMS.register("omnium_pickaxe",
+            ()-> new PickaxeItem(ModToolTiers.OMNIUM, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> OMNIUM_AXE = ITEMS.register("omnium_axe",
+            ()-> new AxeItem(ModToolTiers.OMNIUM, 7, 1, new Item.Properties()));
+    public static final RegistryObject<Item> OMNIUM_SHOVEL = ITEMS.register("omnium_shovel",
+            ()-> new ShovelItem(ModToolTiers.OMNIUM, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> OMNIUM_HOE = ITEMS.register("omnium_hoe",
+            ()-> new HoeItem(ModToolTiers.OMNIUM, 4, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
+            ()-> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

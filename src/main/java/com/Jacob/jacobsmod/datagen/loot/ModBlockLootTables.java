@@ -1,7 +1,9 @@
 package com.Jacob.jacobsmod.datagen.loot;
 
 import com.Jacob.jacobsmod.block.ModBlocks;
+import com.Jacob.jacobsmod.block.custom.TomatoCropBlock;
 import com.Jacob.jacobsmod.item.ModItems;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
@@ -13,6 +15,8 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
@@ -44,6 +48,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.OMNIUM_DOOR.get(),
                 block -> createDoorTable(ModBlocks.OMNIUM_DOOR.get()));
 
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.TOMATO_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TomatoCropBlock.AGE, 5));
+        this.add(ModBlocks.TOMATO_CROP.get(), createCropDrops(ModBlocks.TOMATO_CROP.get(), ModItems.TOMATO.get(),
+                ModItems.TOMATO_SEEDS.get(), lootitemcondition$builder));
+
+
+
         this.add(ModBlocks.OMNIUM_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.OMNIUM_ORE.get(), ModItems.RAW_OMNIUM.get()));
         this.add(ModBlocks.DEEPSLATE_OMNIUM_ORE.get(),
@@ -52,6 +64,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.NETHER_OMNIUM_ORE.get(), ModItems.RAW_OMNIUM.get()));
         this.add(ModBlocks.END_STONE_OMNIUM_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.END_STONE_OMNIUM_ORE.get(), ModItems.RAW_OMNIUM.get()));
+
+
+
     }
 
 

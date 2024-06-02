@@ -29,7 +29,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.PINE_CONE);
         simpleItem(ModItems.TOMATO);
-
+        simpleItem(ModItems.TOMATO_SEEDS);
         simpleBlockItem(ModBlocks.OMNIUM_DOOR);
 
         fenceItem(ModBlocks.OMNIUM_FENCE, ModBlocks.OMNIUM_BLOCK);
@@ -42,6 +42,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockitem(ModBlocks.OMNIUM_SLAB);
 
         trapdoorItem(ModBlocks.OMNIUM_TRAPDOOR);
+
+        handheldItem(ModItems.OMNIUM_SWORD);
+        handheldItem(ModItems.OMNIUM_PICKAXE);
+        handheldItem(ModItems.OMNIUM_AXE);
+        handheldItem(ModItems.OMNIUM_HOE);
+        handheldItem(ModItems.OMNIUM_SHOVEL);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item ) {
@@ -73,6 +79,13 @@ public class ModItemModelProvider extends ItemModelProvider {
     public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall", new ResourceLocation(JacobsMod.MODID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    //json generator for handheld items
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item ) {
+        return withExistingParent(item.getId().getPath(),
+        new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(JacobsMod.MODID, "item/" + item.getId().getPath()));
     }
     //method like simpleItem to add blockitems much easier
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {

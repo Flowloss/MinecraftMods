@@ -1,6 +1,7 @@
-// 1.20.1	2024-06-02T18:42:04.9296873	Tags for minecraft:block mod id jacobsmod
+// 1.20.1	2024-06-02T20:11:24.0032435	Tags for minecraft:block mod id jacobsmod
 227db0b94c3d77543c2fdac5626c543239f88b0a data/forge/tags/blocks/needs_netherite_tool.json
 1b0850c4c8e725c8c746d21dc2541ff0a88c9454 data/jacobsmod/tags/blocks/metal_detector_valuables.json
+0ae33f9813f03e41b1fd604f984465876ed15fa7 data/jacobsmod/tags/blocks/needs_omnium_tool.json
 790a61357204ac99cae0d960d4d537ea937ec58e data/minecraft/tags/blocks/fences.json
 3693d12b432f1c4c0928e1af58e28f73eeeb3e3c data/minecraft/tags/blocks/fence_gates.json
 0c61c9799416fcd2adb5222df145c193db9f5202 data/minecraft/tags/blocks/mineable/pickaxe.json

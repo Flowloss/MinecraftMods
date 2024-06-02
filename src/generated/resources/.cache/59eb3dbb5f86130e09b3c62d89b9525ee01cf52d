@@ -1,4 +1,4 @@
-// 1.20.1	2024-06-02T18:42:04.9296873	Loot Tables
+// 1.20.1	2024-06-02T20:35:57.9624884	Loot Tables
 13b21cfa5ecedec0ece688cc7d6d75bde845ea38 data/jacobsmod/loot_tables/blocks/deepslate_omnium_ore.json
 d13f295320826cddafe379f68f134f7ec6baaf12 data/jacobsmod/loot_tables/blocks/end_stone_omnium_ore.json
 418bfd6786cbb8645d3f4cc7f45f15464b0247d7 data/jacobsmod/loot_tables/blocks/nether_omnium_ore.json
@@ -15,3 +15,4 @@ bdb3bbea08df0e704177efa9461e613610b0d8f5 data/jacobsmod/loot_tables/blocks/omniu
 b2f79381053dce468f54dbf13c664e6614397596 data/jacobsmod/loot_tables/blocks/omnium_wall.json
 8c997e14d9dca8401809a51ea0982534b7863c80 data/jacobsmod/loot_tables/blocks/raw_omnium_block.json
 f88c7e051ec723b0ac4b40e137598878cf79e67a data/jacobsmod/loot_tables/blocks/sound_block.json
+30c3680d131dd53cd4a5098eeb9bbd8bfc28bd31 data/jacobsmod/loot_tables/blocks/tomato_crop.json

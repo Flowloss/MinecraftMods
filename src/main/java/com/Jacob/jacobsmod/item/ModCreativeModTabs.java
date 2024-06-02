@@ -34,6 +34,14 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.NETHER_OMNIUM_ORE.get());
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
 
+                        pOutput.accept(ModItems.OMNIUM_SWORD.get());
+                        pOutput.accept(ModItems.OMNIUM_PICKAXE.get());
+                        pOutput.accept(ModItems.OMNIUM_AXE.get());
+                        pOutput.accept(ModItems.OMNIUM_SHOVEL.get());
+                        pOutput.accept(ModItems.OMNIUM_HOE.get());
+
+                        pOutput.accept(ModItems.TOMATO_SEEDS.get());
+
                         pOutput.accept(ModBlocks.OMNIUM_STAIRS.get());
                         pOutput.accept(ModBlocks.OMNIUM_SLAB.get());
                         pOutput.accept(ModBlocks.OMNIUM_BUTTON.get());
