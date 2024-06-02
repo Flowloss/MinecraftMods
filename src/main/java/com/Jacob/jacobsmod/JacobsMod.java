@@ -1,8 +1,8 @@
-package com.example.examplemod;
+package com.Jacob.jacobsmod;
 
-import com.example.examplemod.block.ModBlocks;
-import com.example.examplemod.item.ModCreativeModTabs;
-import com.example.examplemod.item.ModItems;
+import com.Jacob.jacobsmod.block.ModBlocks;
+import com.Jacob.jacobsmod.item.ModCreativeModTabs;
+import com.Jacob.jacobsmod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;

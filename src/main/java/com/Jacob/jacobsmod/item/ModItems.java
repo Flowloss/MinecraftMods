@@ -1,6 +1,6 @@
-package com.example.examplemod.item;
+package com.Jacob.jacobsmod.item;
 
-import com.example.examplemod.JacobsMod;
+import com.Jacob.jacobsmod.JacobsMod;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

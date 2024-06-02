@@ -1,7 +1,7 @@
-package com.example.examplemod.block;
+package com.Jacob.jacobsmod.block;
 
-import com.example.examplemod.JacobsMod;
-import com.example.examplemod.item.ModItems;
+import com.Jacob.jacobsmod.JacobsMod;
+import com.Jacob.jacobsmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

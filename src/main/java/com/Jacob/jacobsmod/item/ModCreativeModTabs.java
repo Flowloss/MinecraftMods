@@ -1,7 +1,7 @@
-package com.example.examplemod.item;
+package com.Jacob.jacobsmod.item;
 
-import com.example.examplemod.JacobsMod;
-import com.example.examplemod.block.ModBlocks;
+import com.Jacob.jacobsmod.JacobsMod;
+import com.Jacob.jacobsmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
