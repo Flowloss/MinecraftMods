@@ -24,6 +24,10 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.OMNIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_OMNIUM_BLOCK.get());
 
+                        pOutput.accept(ModBlocks.OMNIUM_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_OMNIUM_ORE.get());
+                        pOutput.accept(ModBlocks.END_STONE_OMNIUM_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_OMNIUM_ORE.get());
     }).build());
 
 

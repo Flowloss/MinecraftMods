@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "jacobsmod:block/end_stone_omnium_ore"
+  }
+}
