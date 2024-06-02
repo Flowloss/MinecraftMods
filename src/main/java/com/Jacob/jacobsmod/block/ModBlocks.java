@@ -1,7 +1,6 @@
 package com.Jacob.jacobsmod.block;
 
 import com.Jacob.jacobsmod.JacobsMod;
-<<<<<<< HEAD
 import com.Jacob.jacobsmod.block.custom.CucumberCropBlock;
 import com.Jacob.jacobsmod.block.custom.SoundBlock;
 import com.Jacob.jacobsmod.block.custom.TomatoCropBlock;
@@ -15,7 +14,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
-=======
 import com.Jacob.jacobsmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -25,7 +23,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
->>>>>>> 6682f49 (hej)
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -37,15 +34,10 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, JacobsMod.MODID);
 
-<<<<<<< HEAD
     // all the different omnium blocks
     public static final RegistryObject<Block> OMNIUM_BLOCK = registerBlock("omnium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE)));
 
-=======
-    public static final RegistryObject<Block> OMNIUM_BLOCK = registerBlock("omnium_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE)));
->>>>>>> 6682f49 (hej)
     public static final RegistryObject<Block> RAW_OMNIUM_BLOCK = registerBlock("raw_omnium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE)));
 
@@ -64,7 +56,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_STONE_OMNIUM_ORE = registerBlock("end_stone_omnium_ore",
             ()-> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE)
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(3,7)));
-<<<<<<< HEAD
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock(BlockBehaviour.Properties
                     .copy(Blocks.IRON_BLOCK)));
@@ -117,12 +108,6 @@ public class ModBlocks {
             () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
     public static final RegistryObject<Block> CUCUMBER_CROP = BLOCKS.register("cucumber_crop",
             () -> new CucumberCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
-=======
-
-
-
-
->>>>>>> 6682f49 (hej)
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
