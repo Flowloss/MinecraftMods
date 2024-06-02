@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "jacobsmod:block/omnium_slab"
+    },
+    "type=double": {
+      "model": "jacobsmod:block/omnium_block"
+    },
+    "type=top": {
+      "model": "jacobsmod:block/omnium_slab_top"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_end_stone_omnium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "jacobsmod:end_stone_omnium_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "jacobsmod:omnium_from_smelting_end_stone_omnium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_end_stone_omnium_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jacobsmod:omnium_from_smelting_end_stone_omnium_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

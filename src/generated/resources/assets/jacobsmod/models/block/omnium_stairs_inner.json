@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "jacobsmod:block/omnium_block",
+    "side": "jacobsmod:block/omnium_block",
+    "top": "jacobsmod:block/omnium_block"
+  }
+}

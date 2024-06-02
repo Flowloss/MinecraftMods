@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "omnium",
+  "ingredient": {
+    "item": "jacobsmod:nether_omnium_ore"
+  },
+  "result": "jacobsmod:omnium"
+}
