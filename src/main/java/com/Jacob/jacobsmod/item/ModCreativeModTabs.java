@@ -20,14 +20,19 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.OMNIUM.get());
                         pOutput.accept(ModItems.RAW_OMNIUM.get());
+                        pOutput.accept(ModItems.TOMATO.get());
+                        pOutput.accept(ModItems.PINE_CONE.get());
 
                         pOutput.accept(ModBlocks.OMNIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_OMNIUM_BLOCK.get());
+
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
 
                         pOutput.accept(ModBlocks.OMNIUM_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_OMNIUM_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_OMNIUM_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_OMNIUM_ORE.get());
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
     }).build());
 
 

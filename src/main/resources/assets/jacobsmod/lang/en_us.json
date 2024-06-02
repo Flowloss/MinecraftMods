@@ -3,6 +3,13 @@
   "item.jacobsmod.raw_omnium": "Raw Omnium",
   "block.jacobsmod.omnium_block": "Block of Omnium",
   "block.jacobsmod.raw_omnium_block": "Block of Raw Omnium",
+  "item.jacobsmod.tomato_seeds": "Tomato Seeds",
+  "item.jacobsmod.metal_detector": "Metal Detector",
+  "block.jacobsmod.sound_block": "Sound Block",
+  "item.jacobsmod.tomato": "Tomato",
+  "item.jacobsmod.pine_cone": "Pine Cone",
+
+  "tooltip.jacobsmod.metal_detector.tooltip": " Finds valuable ore",
 
 
   "creativetab.jacobsmod_tab": "JacobsMod"
