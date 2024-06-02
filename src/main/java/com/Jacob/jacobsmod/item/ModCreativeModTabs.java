@@ -20,28 +20,26 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.OMNIUM.get());
                         pOutput.accept(ModItems.RAW_OMNIUM.get());
-<<<<<<< HEAD
+
                         pOutput.accept(ModItems.TOMATO.get());
                         pOutput.accept(ModItems.PINE_CONE.get());
                         pOutput.accept(ModItems.CUCUMBER.get());
-=======
+
 
                         pOutput.accept(ModItems.CROP_DUSTER.get());
->>>>>>> 6682f49 (hej)
+
 
                         pOutput.accept(ModBlocks.OMNIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_OMNIUM_BLOCK.get());
 
-<<<<<<< HEAD
+
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
 
-=======
->>>>>>> 6682f49 (hej)
                         pOutput.accept(ModBlocks.OMNIUM_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_OMNIUM_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_OMNIUM_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_OMNIUM_ORE.get());
-<<<<<<< HEAD
+
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
 
                         pOutput.accept(ModItems.OMNIUM_SWORD.get());
@@ -67,10 +65,6 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.OMNIUM_STAFF.get());
 
                     }).build());
-=======
-    }).build());
->>>>>>> 6682f49 (hej)
-
 
 
     public static void register(IEventBus eventBus) {

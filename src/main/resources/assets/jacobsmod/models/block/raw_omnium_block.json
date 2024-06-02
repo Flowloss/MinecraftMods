@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "jacobsmod:block/raw_omnium_block"
-  }
-}
