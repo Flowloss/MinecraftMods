@@ -11,6 +11,23 @@
 
   "tooltip.jacobsmod.metal_detector.tooltip": " Finds valuable ore",
 
+  "item.jacobsmod.omnium_staff": "Omnium Staff",
+
+  "block.jacobsmod.omnium_ore": "Omnium Ore",
+  "block.jacobsmod.deepslate_omnium_ore": "Deepslate Omnium Ore",
+  "block.jacobsmod.nether_omnium_ore": "Nether Omnium Ore",
+  "block.jacobsmod.end_stone_omnium_ore": "Endstone Omnium Ore",
+
+  "block.jacobsmod.omnium_stairs": "Omnium Stairs",
+  "block.jacobsmod.omnium_slab": "Omnium Slab",
+  "block.jacobsmod.omnium_button": "Omnium Button",
+  "block.jacobsmod.omnium_pressure_plate": "Omnium Pressure Plate",
+  "block.jacobsmod.omnium_fence": "Omnium Fence",
+  "block.jacobsmod.omnium_fence_gate": "Omnium Fence Gate",
+  "block.jacobsmod.omnium_wall": "Omnium Wall",
+  "block.jacobsmod.omnium_door": "Omnium Door",
+  "block.jacobsmod.omnium_trapdoor": "Omnium Trapdoor",
+
 
   "creativetab.jacobsmod_tab": "JacobsMod"
 

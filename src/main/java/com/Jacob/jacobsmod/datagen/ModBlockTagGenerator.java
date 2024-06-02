@@ -6,6 +6,7 @@ import com.Jacob.jacobsmod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.item.BoatItem;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -44,5 +45,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.END_STONE_OMNIUM_ORE.get());
 
+        //adding the blocks to the specific tags
+        this.tag(BlockTags.FENCES)
+                .add(ModBlocks.OMNIUM_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModBlocks.OMNIUM_FENCE_GATE.get());
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.OMNIUM_WALL.get());
     }
 }

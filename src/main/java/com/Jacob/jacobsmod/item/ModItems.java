@@ -25,6 +25,8 @@ public class ModItems {
             ()-> new Item(new Item.Properties().food(ModFoods.TOMATO)));
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
             ()-> new FuelItem(new Item.Properties(), 400));
+    public static final RegistryObject<Item> OMNIUM_STAFF = ITEMS.register("omnium_staff",
+            ()-> new Item(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

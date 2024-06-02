@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "jacobsmod:item/omnium_staff_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "jacobsmod:item/omnium_staff_2d"
+    },
+    "ground": {
+      "parent": "jacobsmod:item/omnium_staff_2d"
+    },
+    "fixed": {
+      "parent": "jacobsmod:item/omnium_staff_2d"
+    }
+  }
+
+}

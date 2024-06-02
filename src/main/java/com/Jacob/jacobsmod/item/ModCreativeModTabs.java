@@ -33,7 +33,21 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.END_STONE_OMNIUM_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_OMNIUM_ORE.get());
                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
-    }).build());
+
+                        pOutput.accept(ModBlocks.OMNIUM_STAIRS.get());
+                        pOutput.accept(ModBlocks.OMNIUM_SLAB.get());
+                        pOutput.accept(ModBlocks.OMNIUM_BUTTON.get());
+                        pOutput.accept(ModBlocks.OMNIUM_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.OMNIUM_FENCE.get());
+                        pOutput.accept(ModBlocks.OMNIUM_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.OMNIUM_WALL.get());
+
+                        pOutput.accept(ModBlocks.OMNIUM_DOOR.get());
+                        pOutput.accept(ModBlocks.OMNIUM_TRAPDOOR.get());
+
+                        pOutput.accept(ModItems.OMNIUM_STAFF.get());
+
+                    }).build());
 
 
 

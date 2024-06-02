@@ -31,6 +31,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RAW_OMNIUM_BLOCK.get());
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
+        this.dropSelf(ModBlocks.OMNIUM_FENCE.get());
+        this.dropSelf(ModBlocks.OMNIUM_WALL.get());
+        this.dropSelf(ModBlocks.OMNIUM_STAIRS.get());
+        this.dropSelf(ModBlocks.OMNIUM_BUTTON.get());
+        this.dropSelf(ModBlocks.OMNIUM_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.OMNIUM_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.OMNIUM_PRESSURE_PLATE.get());
+
+        this.add(ModBlocks.OMNIUM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.OMNIUM_SLAB.get()));
+        this.add(ModBlocks.OMNIUM_DOOR.get(),
+                block -> createDoorTable(ModBlocks.OMNIUM_DOOR.get()));
+
         this.add(ModBlocks.OMNIUM_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.OMNIUM_ORE.get(), ModItems.RAW_OMNIUM.get()));
         this.add(ModBlocks.DEEPSLATE_OMNIUM_ORE.get(),
