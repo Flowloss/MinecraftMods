@@ -29,6 +29,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.OMNIUM_BLOCK.get());
         this.dropSelf(ModBlocks.RAW_OMNIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.SOUND_BLOCK.get());
 
         this.add(ModBlocks.OMNIUM_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.OMNIUM_ORE.get(), ModItems.RAW_OMNIUM.get()));

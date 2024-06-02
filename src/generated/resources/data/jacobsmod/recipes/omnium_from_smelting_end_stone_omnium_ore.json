@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "omnium",
+  "ingredient": {
+    "item": "jacobsmod:end_stone_omnium_ore"
+  },
+  "result": "jacobsmod:omnium"
+}

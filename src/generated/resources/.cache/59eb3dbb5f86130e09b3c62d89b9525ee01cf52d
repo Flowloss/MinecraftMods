@@ -1,0 +1,8 @@
+// 1.20.1	2024-06-02T17:45:03.9206718	Loot Tables
+13b21cfa5ecedec0ece688cc7d6d75bde845ea38 data/jacobsmod/loot_tables/blocks/deepslate_omnium_ore.json
+d13f295320826cddafe379f68f134f7ec6baaf12 data/jacobsmod/loot_tables/blocks/end_stone_omnium_ore.json
+418bfd6786cbb8645d3f4cc7f45f15464b0247d7 data/jacobsmod/loot_tables/blocks/nether_omnium_ore.json
+c448fde563767b3b447aea76984036cc0c98bdc1 data/jacobsmod/loot_tables/blocks/omnium_block.json
+4c245b149523d6f5ced68486170634022f873323 data/jacobsmod/loot_tables/blocks/omnium_ore.json
+8c997e14d9dca8401809a51ea0982534b7863c80 data/jacobsmod/loot_tables/blocks/raw_omnium_block.json
+f88c7e051ec723b0ac4b40e137598878cf79e67a data/jacobsmod/loot_tables/blocks/sound_block.json
