@@ -6,5 +6,7 @@ import net.minecraft.world.food.FoodProperties;
 
 public class ModFoods {
     public static final FoodProperties TOMATO = new FoodProperties.Builder().nutrition(2).fast()
-            .saturationMod(0.2f).effect(()-> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200), 0.5f).build();
+            .saturationMod(0.2f).build();
+    public static final FoodProperties CUCUMBER = new FoodProperties.Builder().nutrition(2).fast()
+            .saturationMod(0.2f).build();
 }

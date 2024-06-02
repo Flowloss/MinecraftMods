@@ -22,6 +22,8 @@ public class ModItems {
             ()-> new MetalDetectorItem(new Item.Properties().durability(100)));
     public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato",
             ()-> new Item(new Item.Properties().food(ModFoods.TOMATO)));
+    public static final RegistryObject<Item> CUCUMBER = ITEMS.register("cucumber",
+            ()-> new Item(new Item.Properties().food(ModFoods.CUCUMBER)));
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
             ()-> new FuelItem(new Item.Properties(), 400));
     public static final RegistryObject<Item> OMNIUM_STAFF = ITEMS.register("omnium_staff",
@@ -40,6 +42,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
             ()-> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> CUCUMBER_SEEDS = ITEMS.register("cucumber_seeds",
+            ()-> new ItemNameBlockItem(ModBlocks.CUCUMBER_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

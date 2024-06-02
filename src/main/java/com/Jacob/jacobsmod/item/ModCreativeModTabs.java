@@ -22,6 +22,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.RAW_OMNIUM.get());
                         pOutput.accept(ModItems.TOMATO.get());
                         pOutput.accept(ModItems.PINE_CONE.get());
+                        pOutput.accept(ModItems.CUCUMBER.get());
 
                         pOutput.accept(ModBlocks.OMNIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_OMNIUM_BLOCK.get());
@@ -41,6 +42,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.OMNIUM_HOE.get());
 
                         pOutput.accept(ModItems.TOMATO_SEEDS.get());
+                        pOutput.accept(ModItems.CUCUMBER_SEEDS.get());
 
                         pOutput.accept(ModBlocks.OMNIUM_STAIRS.get());
                         pOutput.accept(ModBlocks.OMNIUM_SLAB.get());

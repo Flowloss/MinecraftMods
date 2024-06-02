@@ -1,6 +1,7 @@
 package com.Jacob.jacobsmod.block;
 
 import com.Jacob.jacobsmod.JacobsMod;
+import com.Jacob.jacobsmod.block.custom.CucumberCropBlock;
 import com.Jacob.jacobsmod.block.custom.SoundBlock;
 import com.Jacob.jacobsmod.block.custom.TomatoCropBlock;
 import com.Jacob.jacobsmod.item.ModItems;
@@ -96,7 +97,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
             () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
-
+    public static final RegistryObject<Block> CUCUMBER_CROP = BLOCKS.register("cucumber_crop",
+            () -> new CucumberCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

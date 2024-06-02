@@ -1,6 +1,7 @@
 package com.Jacob.jacobsmod.datagen.loot;
 
 import com.Jacob.jacobsmod.block.ModBlocks;
+import com.Jacob.jacobsmod.block.custom.CucumberCropBlock;
 import com.Jacob.jacobsmod.block.custom.TomatoCropBlock;
 import com.Jacob.jacobsmod.item.ModItems;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -48,11 +49,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.OMNIUM_DOOR.get(),
                 block -> createDoorTable(ModBlocks.OMNIUM_DOOR.get()));
 
-        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+        LootItemCondition.Builder lootitemtomatocondition$builder = LootItemBlockStatePropertyCondition
                 .hasBlockStateProperties(ModBlocks.TOMATO_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TomatoCropBlock.AGE, 5));
+        LootItemCondition.Builder lootitemcucumbercondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.CUCUMBER_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CucumberCropBlock.AGE, 4));
+
+        //Crops
+
         this.add(ModBlocks.TOMATO_CROP.get(), createCropDrops(ModBlocks.TOMATO_CROP.get(), ModItems.TOMATO.get(),
-                ModItems.TOMATO_SEEDS.get(), lootitemcondition$builder));
+                ModItems.TOMATO_SEEDS.get(), lootitemtomatocondition$builder));
+
+        this.add(ModBlocks.CUCUMBER_CROP.get(), createCropDrops(ModBlocks.CUCUMBER_CROP.get(), ModItems.CUCUMBER.get(),
+                ModItems.CUCUMBER_SEEDS.get(), lootitemcucumbercondition$builder));
+
+
 
 
 

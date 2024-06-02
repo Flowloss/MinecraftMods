@@ -2,6 +2,7 @@ package com.Jacob.jacobsmod.datagen;
 
 import com.Jacob.jacobsmod.JacobsMod;
 import com.Jacob.jacobsmod.block.ModBlocks;
+import com.Jacob.jacobsmod.block.custom.CucumberCropBlock;
 import com.Jacob.jacobsmod.block.custom.TomatoCropBlock;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -48,10 +49,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.OMNIUM_TRAPDOOR.get()), modLoc("block/omnium_trapdoor"), true, "cutout");
 
         makeTomatoCrop((CropBlock) ModBlocks.TOMATO_CROP.get(), "tomato_stage", "tomato_stage");
+        makeCucumberCrop((CropBlock) ModBlocks.CUCUMBER_CROP.get(), "cucumber_stage", "cucumber_stage");
     }
 
     public void makeTomatoCrop(CropBlock block, String modelName, String textureName) {
         Function<BlockState, ConfiguredModel[]> function = state -> tomatoStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+    public void makeCucumberCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> cucumberStates(state, block, modelName, textureName);
 
         getVariantBuilder(block).forAllStates(function);
     }
@@ -60,6 +67,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((TomatoCropBlock) block).getAgeProperty()),
                 new ResourceLocation(JacobsMod.MODID, "block/" + textureName + state.getValue(((TomatoCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+    private ConfiguredModel[] cucumberStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((CucumberCropBlock) block).getAgeProperty()),
+                new ResourceLocation(JacobsMod.MODID, "block/" + textureName + state.getValue(((CucumberCropBlock) block).getAgeProperty()))).renderType("cutout"));
 
         return models;
     }

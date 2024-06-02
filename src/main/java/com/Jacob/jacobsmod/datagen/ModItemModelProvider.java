@@ -30,6 +30,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PINE_CONE);
         simpleItem(ModItems.TOMATO);
         simpleItem(ModItems.TOMATO_SEEDS);
+        simpleItem(ModItems.CUCUMBER);
+        simpleItem(ModItems.CUCUMBER_SEEDS);
         simpleBlockItem(ModBlocks.OMNIUM_DOOR);
 
         fenceItem(ModBlocks.OMNIUM_FENCE, ModBlocks.OMNIUM_BLOCK);

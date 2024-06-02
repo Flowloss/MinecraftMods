@@ -1,4 +1,5 @@
-// 1.20.1	2024-06-02T20:35:57.960929	Block States: jacobsmod
+// 1.20.1	2024-06-02T21:13:17.1013447	Block States: jacobsmod
+9cebdcb9324d0c8b2c7ddfaa0e377a581683da7a assets/jacobsmod/blockstates/cucumber_crop.json
 d68593e0ef12edfccddd9844fd051fb91be75a51 assets/jacobsmod/blockstates/deepslate_omnium_ore.json
 c24da44247070a045771552ead8661ced10447ad assets/jacobsmod/blockstates/end_stone_omnium_ore.json
 fb0ff3bb79eed1757c2e5b15a5c222935181efc7 assets/jacobsmod/blockstates/nether_omnium_ore.json
@@ -16,6 +17,10 @@ c8c051b641bae352bd2170c045d64e2de4d9ae42 assets/jacobsmod/blockstates/omnium_sta
 1eeef9ad2243aed581e5bea8f915a545b7408002 assets/jacobsmod/blockstates/raw_omnium_block.json
 ff02c2113c650807be4d7cd5a2b58290f9b889f2 assets/jacobsmod/blockstates/sound_block.json
 7b772985b491d03aa8749be06b56954cc884b339 assets/jacobsmod/blockstates/tomato_crop.json
+53aa1fefd6f26ee4ce2f628747da29ba7173edf9 assets/jacobsmod/models/block/cucumber_stage0.json
+521dff4051b0fbed6f34635e639cb9a761978ced assets/jacobsmod/models/block/cucumber_stage1.json
+8a0fd20e40af31b399a587cdc16ad38b8b7a14f1 assets/jacobsmod/models/block/cucumber_stage2.json
+364044488eb91f40766c675376f911d8b44307b9 assets/jacobsmod/models/block/cucumber_stage3.json
 3ff36dc8fbfd0e09bc31925706ab2d11945cc64e assets/jacobsmod/models/block/deepslate_omnium_ore.json
 0e49b8d671ff69035aac88002e8b0154aba8add5 assets/jacobsmod/models/block/end_stone_omnium_ore.json
 aec16ca5d31ccf2d38ce7f56f809f49de48531a2 assets/jacobsmod/models/block/nether_omnium_ore.json
