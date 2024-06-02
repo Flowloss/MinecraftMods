@@ -1,10 +1,15 @@
 package com.Jacob.jacobsmod.item;
 
 import com.Jacob.jacobsmod.JacobsMod;
+<<<<<<< HEAD
 import com.Jacob.jacobsmod.block.ModBlocks;
 import com.Jacob.jacobsmod.item.custom.FuelItem;
 import com.Jacob.jacobsmod.item.custom.MetalDetectorItem;
 import net.minecraft.world.item.*;
+=======
+import com.Jacob.jacobsmod.item.custom.ModCropDusterItem;
+import net.minecraft.world.item.Item;
+>>>>>>> 6682f49 (hej)
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,6 +23,7 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_OMNIUM = ITEMS.register("raw_omnium",
             ()-> new Item(new Item.Properties()));
+<<<<<<< HEAD
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             ()-> new MetalDetectorItem(new Item.Properties().durability(100)));
     public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato",
@@ -44,6 +50,11 @@ public class ModItems {
             ()-> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> CUCUMBER_SEEDS = ITEMS.register("cucumber_seeds",
             ()-> new ItemNameBlockItem(ModBlocks.CUCUMBER_CROP.get(), new Item.Properties()));
+=======
+
+    public static final RegistryObject<Item> CROP_DUSTER = ITEMS.register("crop_duster",
+            () -> new ModCropDusterItem(new Item.Properties()));
+>>>>>>> 6682f49 (hej)
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

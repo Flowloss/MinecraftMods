@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jacobsmod:omnium_block"
+    }
+  ],
+  "result": {
+    "item": "jacobsmod:omnium",
+    "count": 9
+  }
+}

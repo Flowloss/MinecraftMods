@@ -3,6 +3,7 @@
   "item.jacobsmod.raw_omnium": "Raw Omnium",
   "block.jacobsmod.omnium_block": "Block of Omnium",
   "block.jacobsmod.raw_omnium_block": "Block of Raw Omnium",
+<<<<<<< HEAD
   "item.jacobsmod.metal_detector": "Metal Detector",
   "block.jacobsmod.sound_block": "Sound Block",
   "item.jacobsmod.tomato": "Tomato",
@@ -35,6 +36,8 @@
   "block.jacobsmod.omnium_wall": "Omnium Wall",
   "block.jacobsmod.omnium_door": "Omnium Door",
   "block.jacobsmod.omnium_trapdoor": "Omnium Trapdoor",
+=======
+>>>>>>> 6682f49 (hej)
 
 
   "creativetab.jacobsmod_tab": "JacobsMod"

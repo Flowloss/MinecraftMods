@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "jacobsmod:omnium"
+    }
+  },
+  "result": {
+    "item": "jacobsmod:omnium_block"
+  }
+}
