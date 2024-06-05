@@ -52,8 +52,10 @@ public class CropDusterEntityRenderer extends EntityRenderer<CropDusterEntity> {
     @Override
     public void render(CropDusterEntity cropDusterEntity, float p_113930_, float p_113931_, PoseStack p_113932_, MultiBufferSource multiBufferSource, int p_113934_) {
         p_113932_.pushPose();
-        p_113932_.translate(0.0F, 0.375F, 0.0F);
-        p_113932_.mulPose(Axis.YP.rotationDegrees(180.0F - p_113930_));
+//        p_113932_.translate(0.0F, 0.375F, 0.0F);
+        p_113932_.translate(0.0F, 1.5F, 0.0F);
+//        p_113932_.mulPose(Axis.YP.rotationDegrees(180.0F - p_113930_));
+        p_113932_.mulPose(Axis.YP.rotationDegrees(90.0F -  p_113930_));
         float f = (float)cropDusterEntity.getHurtTime() - p_113931_;
         float f1 = cropDusterEntity.getDamage() - p_113931_;
         if (f1 < 0.0F) {
@@ -64,10 +66,10 @@ public class CropDusterEntityRenderer extends EntityRenderer<CropDusterEntity> {
             p_113932_.mulPose(Axis.XP.rotationDegrees(Mth.sin(f) * f * f1 / 10.0F * (float)cropDusterEntity.getHurtDir()));
         }
 
-        float f2 = cropDusterEntity.getBubbleAngle(p_113931_);
-        if (!Mth.equal(f2, 0.0F)) {
-            p_113932_.mulPose((new Quaternionf()).setAngleAxis(cropDusterEntity.getBubbleAngle(p_113931_) * 0.017453292F, 1.0F, 0.0F, 1.0F));
-        }
+//        float f2 = cropDusterEntity.getBubbleAngle(p_113931_);
+//        if (!Mth.equal(f2, 0.0F)) {
+//            p_113932_.mulPose((new Quaternionf()).setAngleAxis(cropDusterEntity.getBubbleAngle(p_113931_) * 0.017453292F, 1.0F, 0.0F, 1.0F));
+//        }
         
         p_113932_.scale(-1.0F, -1.0F, 1.0F);
         p_113932_.mulPose(Axis.YP.rotationDegrees(90.0F));

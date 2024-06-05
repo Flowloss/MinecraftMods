@@ -27,6 +27,7 @@ public class ModCreativeModTabs {
 
 
                         pOutput.accept(ModItems.CROP_DUSTER.get());
+                        pOutput.accept(ModItems.TRACTOR.get());
 
 
                         pOutput.accept(ModBlocks.OMNIUM_BLOCK.get());

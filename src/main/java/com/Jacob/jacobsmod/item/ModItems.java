@@ -4,6 +4,7 @@ import com.Jacob.jacobsmod.JacobsMod;
 import com.Jacob.jacobsmod.block.ModBlocks;
 import com.Jacob.jacobsmod.item.custom.FuelItem;
 import com.Jacob.jacobsmod.item.custom.MetalDetectorItem;
+import com.Jacob.jacobsmod.item.custom.ModTractorItem;
 import net.minecraft.world.item.*;
 import com.Jacob.jacobsmod.item.custom.ModCropDusterItem;
 import net.minecraft.world.item.Item;
@@ -49,6 +50,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> CROP_DUSTER = ITEMS.register("crop_duster",
             () -> new ModCropDusterItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> TRACTOR = ITEMS.register("tractor",
+            () -> new ModTractorItem(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

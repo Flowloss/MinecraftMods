@@ -1,6 +1,6 @@
 package com.Jacob.jacobsmod.item.custom;
 
-import com.Jacob.jacobsmod.entity.custom.CropDusterEntity;
+import com.Jacob.jacobsmod.entity.custom.TractorEntity;
 import com.Jacob.jacobsmod.entity.custom.Vehicle;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -20,10 +20,10 @@ import net.minecraft.world.phys.Vec3;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class ModCropDusterItem extends Item {
+public class ModTractorItem extends Item {
     private static final Predicate<Entity> ENTITY_PREDICATE = EntitySelector.NO_SPECTATORS.and(Entity::isPickable);
 
-    public ModCropDusterItem(Item.Properties pProperties) {
+    public ModTractorItem(Properties pProperties) {
         super(pProperties);
     }
 
@@ -71,6 +71,6 @@ public class ModCropDusterItem extends Item {
     }
 
     private Vehicle getVehicle(Level p_220017_, HitResult p_220018_) {
-        return new CropDusterEntity(p_220017_, p_220018_.getLocation().x, p_220018_.getLocation().y, p_220018_.getLocation().z);
+        return new TractorEntity(p_220017_, p_220018_.getLocation().x, p_220018_.getLocation().y, p_220018_.getLocation().z);
     }
 }
